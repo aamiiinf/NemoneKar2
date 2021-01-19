@@ -1,9 +1,142 @@
-<nav [class.fixed]="isTrue">
-  <h2>Omin</h2>
-  <ul>
-    <li>Home</li>
-    <li>Abuot</li>
-    <li>Profaile</li>
-    <li>Concat</li>
-  </ul>
+<nav class="px-5 dis_n" [class.fixed]="isTrue">
+  <h2 class="px-5 text-center">
+    <mdb-icon class="woodMarct" fas icon="tree"></mdb-icon>
+    <span class="px-3 woodMarct">چوب مارکت</span>
+  </h2>
+  <div class="flex-fill px-2 ml-5">
+    <div class="input-group dis_n">
+      <input type="text" class="formControl" placeholder="جستجوی محصولات">
+      <div class="input-group-append">
+        <div class="btn_p" type="submit"><mdb-icon id="btn" fas icon="search"></mdb-icon></div>
+      </div>
+    </div>
+  </div>
+  <div class="px-2 Font"><a href="#" routerLink="/sing-in">ورود/ ثبت نام</a></div>
+  <div class="px-2"><a href="#"><mdb-icon far icon="heart"></mdb-icon></a></div>
+  <div class="px-2">
+    <a href="#">
+      <mdb-icon fas icon="random"></mdb-icon>
+      <span class="badge badge-pill badgeColor">0</span>
+    </a>
+  </div>
+  <div class="px-2">
+    <a href="#">
+      <mdb-icon fas icon="shopping-bag"></mdb-icon>
+      <span class="badge badge-pill badgeColor">0</span>
+    </a>
+  </div>
 </nav>
+
+      <!-- DisPlay None -->
+<div class="dis_n2">
+  <div class="d-flex justify-content-between">
+    <div class="p-2 mt-2">
+      <div class="px-2">
+        <a href="#">
+          <mdb-icon fas icon="shopping-bag"></mdb-icon>
+          <span class="badge badge-pill badgeColor">0</span>
+        </a>
+      </div>
+    </div>
+    <div class="p-2">
+      <h2 class="px-5 text-center">
+        <mdb-icon class="woodMarct" fas icon="tree"></mdb-icon>
+        <span class="px-3 woodMarct">چوب مارکت</span>
+      </h2>
+    </div>
+    <div class="p-2">
+
+      <div class="container_div">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+
+          <!-- Search form -->
+          <div id="searchForm">
+            <form class="form-inline waves-light" mdbWavesEffect>
+              <div class="md-form mt-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="جستجوی محصولات">
+              </div>
+            </form>
+          </div>
+
+          <div id="accordion">
+            <div class="Coll_a" data-toggle="collapse" data-target="#demo-1">دسته بندی ها</div>
+            <div id="demo-1" class="collapse" data-parent="#accordion">
+              <ul class="ulCollpase">
+                <li class="aaa"><a href="#">خانه</a></li>
+                <li><a href="#">فروشگاه</a></li>
+                <li><a href="#">وبلاگ</a></li>
+                <li><a href="#">مکان ها و مناطق</a></li>
+                <li><a href="#">قوانین وتذکرات</a></li>
+                <li><a href="#">اعضای صنعت</a></li>
+                <li><a href="#">درباره ما</a></li>
+                <li><a href="#">تبلیغات</a></li>
+              </ul>
+            </div>
+            <br />
+            <div class="Coll_a" data-toggle="collapse" data-target="#demo-2">اتاق خواب</div>
+            <div id="demo-2" class="collapse" data-parent="#accordion">
+              <ul class="ulCollpase">
+                <li class="aaa"><a href="#">سرویس خواب</a></li>
+                <li><a href="#">اکسسوری اتاق خواب</a></li>
+                <li><a href="#">جانبی اتاق خواب</a></li>
+              </ul>
+            </div>
+            <br />
+            <div class="Coll_a" data-toggle="collapse" data-target="#demo-3">کالای خواب</div>
+            <div id="demo-3" class="collapse" data-parent="#accordion">
+              <ul class="ulCollpase">
+                <li class="aaa"><a href="#">باکس و فریم</a></li>
+                <li><a href="#">بالشت</a></li>
+                <li><a href="#">تشک</a></li>
+              </ul>
+            </div>
+            <br />
+            <div class="Coll_a" data-toggle="collapse" data-target="#demo-4">اداری</div>
+            <div id="demo-4" class="collapse" data-parent="#accordion">
+              <ul class="ulCollpase">
+                <li class="aaa"><a href="#">صندلی و مبل اداری</a></li>
+                <li><a href="#">اکسسوری اتاق خواب</a></li>
+                <li><a href="#">میز اداری</a></li>
+              </ul>
+            </div>
+            <br />
+            <div class="Coll_a" data-toggle="collapse" data-target="#demo-5">آشپزخانه و غذا خوری</div>
+            <div id="demo-5" class="collapse" data-parent="#accordion">
+              <ul class="ulCollpase">
+                <li class="aaa"><a href="#">نهار خوری</a></li>
+                <li><a href="#">اکسسوری آشپزخانه</a></li>
+                <li><a href="#">جانبی آشپزخانه</a></li>
+              </ul>
+            </div>
+            <br />
+            <div class="Coll_a" data-toggle="collapse" data-target="#demo-6">کودک و نوجوان</div>
+            <div id="demo-6" class="collapse" data-parent="#accordion">
+              <ul class="ulCollpase">
+                <li class="aaa"><a href="#">جانبی کودک و نوجوان</a></li>
+                <li><a href="#">سرویس خواب نوجوان</a></li>
+                <li><a href="#">سرویس خواب نوزاد</a></li>
+                <li><a href="#">سرویس خواب کودک</a></li>
+              </ul>
+            </div>
+            <br />
+            <div class="Coll_a" data-toggle="collapse" data-target="#demo-7">پاسیو</div>
+            <div id="demo-7" class="collapse" data-parent="#accordion">
+              <ul class="ulCollpase">
+                <li class="aaa"><a href="#">مبلمان پاسیو</a></li>
+                <li><a href="#">اکسسوری پاسیو</a></li>
+                <li><a href="#">جانبی پاسیو</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776;</span>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+

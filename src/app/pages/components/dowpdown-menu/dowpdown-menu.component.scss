@@ -1,0 +1,161 @@
+#back{
+  background-image: url("https://kianwoodco.com/wp-content/uploads/2016/04/Untitled-1-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+#back div h1{
+  font-weight: bold;
+  font-size: 48px;
+}
+#back div p{
+  font-weight: bold;
+  font-size: 15px;
+}
+.dis_n{
+  border: 0.5px solid rgb(231, 231, 231);
+}
+
+//DropDown
+
+
+.color-d{
+  background-color: #83b735;
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,.16), 0 0px 0px 0 rgba(0,0,0,.12);
+  font-size: 15px;
+}
+.color-d:hover{
+  color:rgb(255, 255, 255);
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,.16), 0 0px 0px 0 rgba(0,0,0,.12);
+}
+.drop{
+  direction: rtl;
+  padding: 0 5px;
+  .drop-d{
+    right: 0;
+    text-align: right;
+  }
+}
+.span-1{
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.but{
+  padding: 0 8px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+//  Maga Menu
+
+.nav{
+  direction: rtl;
+  padding: 0px;
+  margin: 0px;
+  ul li{
+    padding: 0 20px;
+    a{
+      color: rgb(82, 82, 82);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 18px;
+      margin-top: 3px;
+    }
+    a:hover{
+      color: #fac209;
+    }
+  }
+}
+@media only screen and (max-width: 1168px) {
+  .nav ul li a{
+    font-size: 13px;
+    margin-top: 5px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .nav ul li a{
+    font-size: 11px;
+    margin-top: 8px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .nav ul li a{
+    font-size: 9px;
+    margin-top: 11px;
+  }
+}
+#main_menu
+{
+    float:right;
+    padding:0px;
+    width:100%;
+    margin: 0px;
+    position: relative;
+    top: 0px;
+}
+#main_menu .main_list
+{
+    color:#fff;
+    list-style-type:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media only screen and (max-width: 968px) {
+  .dis_n{
+    display: none;
+  }
+  #back{
+    height: 150px;
+  }
+  #back div h1{
+    font-size: 28px;
+    margin-top: -15px;
+  }
+  #back div p{
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #back div h1{
+    margin-top: 15px;
+  }
+}
+
+.megaMenu{
+  display: none;
+  width: 100%;
+  right: 0;
+  position: absolute;
+  background: #ffffff;
+  list-style-type: none;
+  z-index: 99;
+  padding: 25px;
+  border: 0.5px solid rgb(228, 228, 228);
+  li{
+    display: inline-block;
+    text-align: right;
+    a{
+      display: block;
+      text-align: right;
+    }
+  }
+}
+.li-nav:hover ul.megaMenu{
+  display: block;
+}
+.li-nav:hover ul.megaMenu li{
+  width: 180px;
+  margin-right: 40px;
+  float: right;
+  img{
+    margin-top: 45px;
+  }
+  h4{
+    font-size: 18px;
+    color: rgb(243, 166, 50);
+  }
+  a{
+    padding: 8px 0px;
+  }
+}

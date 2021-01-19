@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+  selector: 'app-informating-page',
+  templateUrl: './informating-page.component.html',
+  styleUrls: ['./informating-page.component.scss']
 })
-export class MainComponent implements OnInit {
+export class InformatingPageComponent implements OnInit {
+
   public isTrue;
   constructor() { }
 

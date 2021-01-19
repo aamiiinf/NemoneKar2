@@ -17,10 +17,19 @@ export class TopMenuComponent implements OnInit {
 }
   scroll = (event): void => {
     const n = event.srcElement.scrollingElement.scrollTop;
-    if(n >= 220){
+    if(n >= 100){
       this.isTrue = true;
-    }else{
+    }else if(n < 80){
       this.isTrue = false;
     }
+  }
+
+
+  openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
   }
 }

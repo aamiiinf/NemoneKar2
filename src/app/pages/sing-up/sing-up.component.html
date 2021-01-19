@@ -1,0 +1,79 @@
+<div id="block"></div>
+<div class="ColorNav">
+  <div class="nav lighten-4 px-5 d-flex p-2 div-1 justify-content-sm-center">
+    <div class="px-2"><a href="#">خبرنامه</a></div>|
+    <div class="px-2"><a href="#">با ما تماس بگیرید</a></div>|
+    <div class="px-2"><a href="#"><mdb-icon fab icon="whatsapp"></mdb-icon></a></div>
+    <div class="px-2"><a href="#"><mdb-icon fab icon="instagram"></mdb-icon></a></div>
+    <div class="px-2"><a href="#"><mdb-icon far icon="envelope"></mdb-icon></a></div>
+    <div class="px-2"><a href="#"><mdb-icon fas icon="sms"></mdb-icon></a></div>
+    <div id="dis_n" class="m-auto px-5">ارسال رایگان برای کلیه سفارش ها</div>
+    <div id="dis_b">
+      <div class="px-2 Font"><a href="#" routerLink="/sing-in"><mdb-icon fas icon="sign-in-alt"></mdb-icon></a></div>
+    </div>
+  </div>
+</div>
+<app-top-menu></app-top-menu>
+
+<app-dowpdown-menu></app-dowpdown-menu>
+
+<div id="rtl" class="container register">
+  <div class="row">
+      <!-- Right Side Title -->
+      <div class="col-12 col-md-3 register-right">
+
+          <input type="button" routerLink="/main" routerLinkActive="active" value="ورود به سایت"/><br/>
+      </div>
+      <!-- /Right Side Title -->
+      <!-- Left Side Forms -->
+      <div class="col-12 col-md-9">
+          <div class="register-left p-3">
+              <!-- /Tabs Nav-bar -->
+              <div class="tab-content" id="myTabContent">
+                  <!-- Tab 1 -->
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                      <h3 class="register-heading">ورود</h3>
+                      <div>
+                          <div class="row register-form mx-auto">
+
+                              <div class="col-12 col-md-12">
+                                <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+                                  <div class="form-group md-form">
+                                      <input mdbInput mdbValidate type="email" name="email"
+                                            ngModel #email="ngModel" class="form-control mb-4"
+                                            placeholder="پست الکترونیک *" required pattern="[^ @]*@[^ @]*[.com]" />
+                                      <mdb-error *ngIf="email.invalid && (email.dirty || email.touched)">لطفا ایمیل خود را وارد کنید</mdb-error>
+                                      <mdb-success *ngIf="email.valid && (email.dirty || email.touched)">ایمیل مورد تایید است</mdb-success>
+                                  </div>
+                                  <div class="form-group md-form">
+                                      <input mdbInput mdbValidate
+                                            type="password" name="password"
+                                            [(ngModel)]="minLength" required minlength="8"
+                                            ngModel #password="ngModel"
+                                            class="form-control" placeholder="رمز عبور *" />
+                                      <mdb-error *ngIf="password.invalid && (password.dirty || password.touched)">لطفا پسورد خود را وارد کنید</mdb-error>
+                                      <mdb-success *ngIf="password.valid && (password.dirty || password.touched)">پسورد مورد تایید است</mdb-success>
+                                  </div>
+
+                                  <input type="submit" class="btnRegister" value="ورود"/>
+                                </form>
+
+                              </div>
+                              <br/>
+                                  <a routerLink="/sing-in" routerLinkActive="active">ساخت حساب کاربری</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<a href="#block">
+  <div class="example z-depth-1 top" [class.fixed]="isTrue">
+    <mdb-icon class="icon-up" fas icon="angle-double-up"></mdb-icon>
+
+  </div>
+</a>
+<app-footer></app-footer>

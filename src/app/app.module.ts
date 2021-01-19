@@ -13,6 +13,12 @@ import { MainComponent } from './pages/main/main.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 import { FooterComponent } from './pages/components/footer/footer.component';
 import { TopMenuComponent } from './pages/components/top-menu/top-menu.component';
+import { CenterMainComponent } from './pages/components/center-main/center-main.component';
+import { DowpdownMenuComponent } from './pages/components/dowpdown-menu/dowpdown-menu.component';
+import { InformatingPageComponent } from './pages/informating-page/informating-page.component';
+import { MainInformaionPageComponent } from './pages/components/main-informaion-page/main-informaion-page.component';
+import { SingInComponent } from './pages/sing-in/sing-in.component';
+import { SingUpComponent } from './pages/sing-up/sing-up.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,13 @@ import { TopMenuComponent } from './pages/components/top-menu/top-menu.component
     MainComponent,
     NotFoundPageComponent,
     FooterComponent,
-    TopMenuComponent
+    TopMenuComponent,
+    CenterMainComponent,
+    DowpdownMenuComponent,
+    InformatingPageComponent,
+    MainInformaionPageComponent,
+    SingInComponent,
+    SingUpComponent
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,62 @@
-.alpa{
-  opacity: 65%;
-  font-size: 20px;
-  position: absolute;
-  bottom: 1rem;
-  width: 100%;
-  padding: 2px;
-  text-align: center;
+@import "../components/dowpdown-menu/dowpdown-menu.component.scss";
+.ColorNav{
+  background-color:rgba(131,183,53,1);
+  color: #fff;
   direction: rtl;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  .div-1 div a{
+    color: white;
+  }
+  .div-1 div a:hover{
+    color: rgb(233, 232, 232);
+  }
+}
+
+.main-div{
+  text-align: center;
+  padding-bottom: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(180, 180, 180);
+  button{
+    border: 1px solid rgb(180, 180, 180);
+    padding: 10px 25px;
+    span{
+      font-size: 16px;
+    }
+  }
+}
+@media only screen and (max-width: 968px) {
+  #dis_n{
+    display: none;
+  }
+}
+@media only screen and (min-width: 968px) {
+  #dis_b{
+    display: none;
+  }
+}
+.top{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    color: rgb(87, 86, 86);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 2500;
+    background: rgb(255, 255, 255);
+    display: none;
+    z-index: 50;
+    border: 1px solid rgb(209, 209, 209);
+}
+.icon-up{
+  font-size: 25px;
+  margin-top: 10px;
+}
+.top:hover{
+  background: rgb(243, 243, 243);
+}
+.fixed{
+  display: block;
 }
