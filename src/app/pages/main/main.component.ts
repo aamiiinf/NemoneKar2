@@ -23,4 +23,8 @@ export class MainComponent implements OnInit {
       this.isTrue = false;
     }
   }
+
+  Up($element): void {
+    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
 }

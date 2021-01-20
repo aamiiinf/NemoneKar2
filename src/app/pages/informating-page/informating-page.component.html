@@ -1,4 +1,4 @@
-<div id="block2"></div>
+<div #target></div>
 <div class="ColorNav">
   <div class="nav lighten-4 px-5 d-flex p-2 div-1 justify-content-sm-center">
     <div class="px-2"><a href="#">خبرنامه</a></div>|
@@ -20,10 +20,7 @@
 
 <app-main-informaion-page></app-main-informaion-page>
 
-<a href="#block2">
-  <div class="example z-depth-1 top" [class.fixed]="isTrue">
-    <mdb-icon class="icon-up" fas icon="angle-double-up"></mdb-icon>
-
-  </div>
+<a class="top" (click)="Up(target)" [class.fixed]="isTrue">
+  <mdb-icon class="icon-up" fas icon="angle-double-up"></mdb-icon>
 </a>
 <app-footer></app-footer>

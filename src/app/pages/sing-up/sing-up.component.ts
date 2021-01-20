@@ -40,4 +40,8 @@ export class SingUpComponent {
     form.resetForm();
   }
 
+  Up($element): void {
+    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+
 }
